@@ -12,6 +12,9 @@ and the Eureka Service Discovery from the [Spring Cloud Netflix](https://github.
 [![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/spring-petclinic/spring-petclinic-microservices)
 
 ## Starting services locally without Docker
+First executing the follow command:
+
+    docker-compose up -d tracing-server grafana-server prometheus-server
 
 Every microservice is a Spring Boot application and can be started locally using IDE or `../mvnw spring-boot:run` command or `..\mvnw.cmd spring-boot:run` command on Windows OS.
 Please note that supporting services (Config and Discovery Server) must be started before any other application (Customers, Vets, Visits and API).
